@@ -24,31 +24,31 @@ This repository is organized into specific directories to ensure the transparenc
 ### 1. [/Weights](https://github.com/bavaria-analysis/soybean-suitability/tree/main/Weights)
 This folder contains the mathematical foundation for the multicriteria analysis.
 
-· AHP Calculation.xlsx: The Microsoft Excel spreadsheet containing the pairwise comparison matrix for the seven criteria. It includes the calculation of the Cumulative Weight Index (CWI) and the Consistency Ratio (CR) of 0.028.
+· `AHP Calculation.xlsx`: The Microsoft Excel spreadsheet containing the pairwise comparison matrix for the seven criteria. It includes the calculation of the Cumulative Weight Index (CWI) and the Consistency Ratio (CR) of 0.028.
 
 ### 2. [/Rasters](https://github.com/bavaria-analysis/soybean-suitability/tree/main/Rasters)
-This directory holds the seven reclassified thematic layers (.tiff) used as inputs for the weighted overlay analysis, embedded in zipped files. All rasters are harmonized to a 25m resolution and the ETRS 1989 UTM Zone 32N coordinate system.
+This directory holds the seven reclassified thematic layers `(.tiff)` used as inputs for the weighted overlay analysis, embedded in zipped files. All rasters are harmonized to a 25m resolution and the ETRS 1989 UTM Zone 32N coordinate system.
 
-· pH.zip: Reclassified soil pH based on FAO standards (Optimal: 6-7).
+· `/pH.zip`: Reclassified soil pH based on FAO standards (Optimal: 6-7).
 
-· Organic_Carbon.zip: Reclassified Soil Organic Carbon (Optimal: 2.4-3.5%).
+· `Organic_Carbon.zip`: Reclassified Soil Organic Carbon (Optimal: 2.4-3.5%).
 
-· Slope.zip: Terrain slope derived from SRTM DEM (Optimal: 0-2%).
+· `Slope.zip`: Terrain slope derived from SRTM DEM (Optimal: 0-2%).
 
-· Drainage.zip: Topographic Wetness Index (TWI) representing soil moisture.
+· `Drainage.zip`: Topographic Wetness Index (TWI) representing soil moisture.
 
-· LULC.zip: Land use classification identifying arable vs. non-arable zones.
+· `LULC.zip`: Land use classification identifying arable vs. non-arable zones.
 
-· Temperature.zip: Temperature suitability based on Bavarian climatic mean.
+· `Temperature.zip`: Temperature suitability based on Bavarian climatic mean.
 
-· Precipitation.zip: Precipitation suitability grids.
+· `Precipitation.zip`: Precipitation suitability grids.
 
 ### 3. [/Results](https://github.com/bavaria-analysis/soybean-suitability/tree/main/Results)
-· Soybean Suitability Layer.zip: the final output of the weighted overlay analysis, categorizing land into classes S1 (Highly Suitable) through N2 (Permanently Unsuitable).
+· `Soybean Suitability Layer.zip`: the final output of the weighted overlay analysis, categorizing land into classes S1 (Highly Suitable) through N2 (Permanently Unsuitable).
 
-· NDVI_Validation.zip: The reclassified NDVI surface used for indirect validation.
+· `NDVI_Validation.zip`: The reclassified NDVI surface used for indirect validation.
 
-· Suitability Analysis_Statistics.xlsx: Tabular statistics of reclassified criteria, final suitability surface and overlap result from indirect validation.
+· `Suitability Analysis_Statistics.xlsx`: Tabular statistics of reclassified criteria, final suitability surface and overlap result from indirect validation.
 
 # 3. How to reproduce the results
 Step 1: Download the reclassified rasters from this repository.
